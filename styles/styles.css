@@ -1,0 +1,351 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    height: 123px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#topbar {
+    width: 100%;
+    height: 47px;
+    padding: 12px 72px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+}
+
+#topbar .topleft {
+    display: flex;
+    height: 21px;
+    gap: 2px;
+    font-size: 14px;
+
+}
+
+.topleft a,
+.navright a,
+.ptop-right a {
+    text-decoration: none;
+    border-bottom: 2px solid #FFBF1C;
+    color: black;
+    font-weight: 800;
+}
+
+#topbar .topright {
+    display: flex;
+    gap: 16px;
+    width: 206px;
+    height: 21px;
+}
+
+.topright p {
+    width: 66px;
+    height: 21px;
+    font-size: 14px;
+}
+
+.topright .icons {
+    display: flex;
+    gap: 16px;
+    cursor: pointer;
+}
+
+#navbar {
+    height: 76px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 72px;
+}
+
+#navbar .navleft {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    color: #000000;
+}
+
+.navleft p {
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    color: #3E444F;
+
+}
+
+.navleft p span {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 32px;
+    font-weight: 200;
+}
+
+.e {
+    position: absolute;
+}
+
+.navleft p .pro {
+    font-size: 5px;
+    font-weight: 500;
+    position: relative;
+    top: -20px;
+    right: 15px;
+    font-size: 10px;
+}
+
+.navmenu {
+    display: flex;
+    gap: 48px;
+}
+
+.navmenu a,
+.navright a {
+    text-decoration: none;
+    color: #111926;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+
+}
+
+.navright {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+.banner {
+    width: 100%;
+    height: 720px;
+    background-image: url(/assests/images/hero-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    position: relative;
+    /* important */
+    padding: 60px;
+    overflow: hidden;
+}
+
+.banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.352);
+    z-index: 0;
+
+}
+
+.banner * {
+    position: relative;
+    z-index: 1;
+}
+
+.banner-content {
+    height: 328px;
+    width: 612px;
+    margin-top: 150px;
+    margin-left: 130px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    color: white;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.banner-content h1 {
+    font-size: 56px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.banner-content h1 span {
+    font-weight: 700;
+}
+
+.banner-content p {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(234, 234, 234, 1);
+    margin-bottom: 25px;
+}
+
+.banner-content a {
+    width: fit-content;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 1);
+    border-bottom: 2px solid #FFBF1C;
+}
+
+/* Arrow buttons */
+.banner .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.3);
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+/* Left arrow */
+.banner .arrow.left {
+    left: 20px;
+}
+
+/* Right arrow */
+.banner .arrow.right {
+    right: 20px;
+}
+
+/* Optional hover effect */
+.banner .arrow:hover {
+    background: rgba(255, 253, 253, 0.762);
+
+}
+
+/* Projects */
+.projects {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    width: 100%;
+    height: 1090px;
+    padding: 80px 72px;
+}
+
+.project-top {
+    height: 160px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.ptop-left p {
+    margin-bottom: 20px;
+}
+
+.ptop-left h1 {
+
+    font-size: 40px;
+    font-weight: 700;
+    color: #111926;
+}
+
+.ptop-right {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #111926;
+}
+
+.ptop-right a {
+    font-weight: 400;
+}
+
+.project-content {
+    display: flex;
+    gap: 100px;
+    margin-bottom: 100px;
+}
+
+.project-description {
+    width: 612px;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    gap: 44px;
+}
+
+.project-description .button,
+.card .button {
+    display: flex;
+    gap: 9px;
+    align-items: center;
+}
+
+.project-description .button a,
+.card .button a {
+    text-decoration: none;
+    border-bottom: 2px solid #FFBF1C;
+    color: black;
+    font-weight: 400;
+}
+
+.project-listing,
+.service-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.card {
+    width: 385px;
+    height: 190px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.card p {
+    color: #3E444F;
+}
+
+.services {
+    height: 824px;
+    background-color: rgba(20, 58, 162, 1);
+    padding: 100px 72px;
+    color: white;
+    font-family: "plus jakarta sans", sans-serif;
+
+}
+
+.service-top {
+    width: 840px;
+    height: 97px;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.service-cards {
+    margin-top: 80px;
+}
+
+.s-card {
+    padding: 50px;
+    width: 384px;
+    height: 415px;
+    border: 1px solid #eee;
+}
+
+.teams {
+    height: 1074px;
+
+}
+
+#footer {
+    height: 662px;
+    background-color: #143AA2;
+    /* Inside auto layout */
+
+}
