@@ -284,6 +284,11 @@ header {
     margin-bottom: 100px;
 }
 
+.project-content img {
+    width: 570px;
+    height: 360px;
+}
+
 .project-description {
     width: 612px;
     display: flex;
@@ -763,11 +768,6 @@ body {
 }
 
 
-.project-content img {
-    width: 100% !important;
-    height: auto !important;
-    display: block;
-}
 
 .hamburger {
     display: none;
@@ -776,6 +776,12 @@ body {
 @media (max-width: 480px) {
     #topbar {
         display: none;
+    }
+
+    .project-content img {
+        width: 100% !important;
+        height: auto !important;
+        display: block;
     }
 
     .project-description,
@@ -924,6 +930,12 @@ body {
     .project-content {
         margin-bottom: 50px;
         flex-direction: column;
+    }
+
+    .project-content img {
+        width: 100% !important;
+        height: auto !important;
+        display: block;
     }
 
     .project-description {
