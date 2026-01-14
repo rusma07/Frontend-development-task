@@ -232,7 +232,6 @@ header {
     right: 20px;
 }
 
-/* Optional hover effect */
 .banner .arrow:hover {
     background: rgba(255, 253, 253, 0.762);
 
@@ -824,7 +823,6 @@ body {
         gap: 10px;
     }
 
-    /* Show hamburger only on mobile */
     .hamburger {
         display: flex;
         flex-direction: column;
@@ -842,7 +840,6 @@ body {
         border-radius: 2px;
     }
 
-    /* Mobile dropdown menu */
     .navmenu {
         display: none;
         flex-direction: column;
@@ -1084,7 +1081,6 @@ body {
         font-size: 13px;
     }
 
-    /* Service-area nav */
     .a-navlink a {
         font-size: 12.5px;
     }
